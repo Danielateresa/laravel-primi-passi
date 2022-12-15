@@ -24,3 +24,11 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 })->name('home');
+
+Route::get('/about us', function () {
+    $page_title = "Primi passi con Laravel";
+    $intro = "This is us";
+    $description = "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet";
+
+    return view('about', compact('intro', 'description', 'page_title'));
+})->name('about');

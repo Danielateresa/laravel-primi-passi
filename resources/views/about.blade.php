@@ -26,13 +26,9 @@
     <h1>{{$page_title}}</h1>
 
     <div class="container mt-5">
-        <ul>
-            @foreach($passaggi as $passaggio)
-            <li>
-                {{$passaggio}}
-            </li>
-            @endforeach
-        </ul>
+        <h3>{{$intro}}</h3>
+
+        <p>{{$description}}</p>
     </div>
 
     <!-- Bootstrap JavaScript Libraries -->
