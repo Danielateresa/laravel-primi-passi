@@ -18,6 +18,14 @@
 
     <h1>{{$page_title}}</h1>
 
+    <ul>
+        @foreach($passaggi as $passaggio)
+        <li>
+            {{$passaggio}}
+        </li>
+        @endforeach
+    </ul>
+
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
