@@ -27,10 +27,12 @@
     <h1>{{$page_title}}</h1>
 
     <div class="container mt-5">
+
+        <h3>Welcome to my page</h3>
         <ul>
-            @foreach($passaggi as $passaggio)
+            @foreach($steps as $step)
             <li>
-                {{$passaggio}}
+                {{$step}}
             </li>
             @endforeach
         </ul>

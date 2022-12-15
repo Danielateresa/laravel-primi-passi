@@ -26,7 +26,10 @@
 
     <h1>{{$page_title}}</h1>
 
+
+
     <div class="container mt-5">
+        <h3>Contact us</h3>
         <div class="mb-3">
             <label class="form-label">Name</label>
             <input type="text" name="" id="" class="form-control" placeholder="">

@@ -15,18 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        'page_title'=> 'Primi passi con Laravel',
-        'passaggi'=>[
-            'installare Laravel',
-            'creare repo',
-            'seguire la traccia'
+        'page_title'=> 'Laravel first steps',
+        'steps'=>[
+            'install Laravel',
+            'create repo',
+            'do the excercise'
         ],
     ];
     return view('home', $data);
 })->name('home');
 
 Route::get('/about us', function () {
-    $page_title = "Primi passi con Laravel";
+    $page_title = "Laravel first steps";
     $intro = "This is us";
     $description = "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet";
 
@@ -34,7 +34,7 @@ Route::get('/about us', function () {
 })->name('about');
 
 Route::get('/contacts', function () {
-    $page_title = "Primi passi con Laravel";
+    $page_title = "Laravel first steps";
 
 
     return view('contacts', compact('page_title'));
