@@ -32,3 +32,10 @@ Route::get('/about us', function () {
 
     return view('about', compact('intro', 'description', 'page_title'));
 })->name('about');
+
+Route::get('/contacts', function () {
+    $page_title = "Primi passi con Laravel";
+
+
+    return view('contacts', compact('page_title'));
+})->name('contacts');

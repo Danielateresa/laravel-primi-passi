@@ -27,13 +27,23 @@
     <h1>{{$page_title}}</h1>
 
     <div class="container mt-5">
-        <ul>
-            @foreach($passaggi as $passaggio)
-            <li>
-                {{$passaggio}}
-            </li>
-            @endforeach
-        </ul>
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" name="" id="" class="form-control" placeholder="">
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                    placeholder="abc@mail.com">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">You message</label>
+                <textarea class="form-control" name="" id="" rows="3"></textarea>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
     </div>
 
     <!-- Bootstrap JavaScript Libraries -->
